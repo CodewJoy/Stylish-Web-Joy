@@ -1,0 +1,61 @@
+main {
+    /* width: 100%; */
+    padding-top: 40px;
+    padding-bottom: 250px;
+}
+.view {
+    text-align: center;
+    margin: 3%;
+    height: auto;
+}
+
+.success-purchase {
+    display: inline-flex;
+    align-items: center;
+}
+
+.message {
+    margin: 3%;
+    font-size: 18px;
+}
+
+.success-purchase img {
+    width: 50px;
+    height: auto;
+    margin: 10px ;
+}
+
+.purchase-number {
+    background-color: lightgray;
+}
+
+.buy-button {
+    background-color: #9F7462; /* Green */
+    border: none;
+    padding: 5px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+}  
+
+.buy-more {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.buy-more {
+    text-decoration: none;
+    color: white;
+    font-weight:bold;
+}
+
+.buy-more img {
+    width: 30px;
+    height: auto;
+    margin: 10px ;
+}

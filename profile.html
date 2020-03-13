@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155010208-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-155010208-1');
+        // ga('set', 'userId', 'USER_ID'); // 使用已登入的 user_id 設定 User ID。
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stylish_login</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a class="headerLogo" href="./"><img class="btnLogo" src="img/logo.png"></a>
+            <form class="mobile-search-shown">
+                <input type="text" class="searchDescription-mobile" size="50">
+                <img class="btnSearch-mobile-shown" src="img/search.png">
+            </form>
+            <img class="btnSearch_mobile" src="img/search.png">
+            <div class="nav_web">
+                <div class="nav_center">
+                    <ul>
+                        <li><a href="./?category=women" class="womenButton">女裝</a></li>
+                        <li>|</li>
+                        <li><a href="./?category=men" class="menButton">男裝</a></li>
+                        <li>|</li>
+                        <li><a href="./?category=accessories" class="accessoriesButton">配件</a></li>
+                    </ul>
+                </div>
+                <div class="nav_right">
+                    <!-- <form action="/action_page.php"> -->
+                    <form>
+                        <input type="text" class="searchDescription" size="50">
+                        <img class="btnSearch_web" src="img/search.png">
+                    </form>
+                    <a href="cart.html">
+                        <div class="cart_web" style="background-image: url(./img/cart.png)">
+                            <div class="qty"></div>
+                        </div>
+                    </a>
+                    <a href="#" scope="public_profile,email">
+                        <img class="member_web"  src="img/member.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="subNav">
+            <ul class="menu">
+                <li><a href="./?category=women" class="womenButton">女裝</a></li>
+                <li>|</li>
+                <li><a href="./?category=men" class="menButton">男裝</a></li>
+                <li>|</li>
+                <li><a href="./?category=accessories" class="accessoriesButton">配件</a></li>
+            </ul>
+            <ul class="menu_bottom">
+                <li>
+                    <a class="cart_mobile" href="cart.html">
+                        <div class="cart_mobile_logo" style="background-image: url(./img/cart-mobile.png)">
+                            <div class="qty"></div>
+                        </div>
+                        <span>購物車</span>
+                    </a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a class="member_mobile" href="#">
+                        <img src="img/member-mobile.png">
+                        <span>會員</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="view">
+            <div class="personal-info">
+                <div class="fb-info">
+                    <div>
+                        <img class="fb-pic" src="img/avatar.svg">
+                    </div>
+                    <div class="fb-name"></div>
+                    <br>
+                    <div class="fb-text">
+                        <!-- <div class="fb-id"></div> -->
+                        <div class="fb-email">會員資訊 <span></span></div>
+                    </div>
+                </div>
+                <div class="other-info">
+                    <hr>
+                    <div class="line">
+                        <div class="input">
+                            <input type="text" id="member-name" placeholder="請輸入姓名">
+                        </div>
+                        <div class="input input-two-column">
+                            <input type="text" id="member-birthday" placeholder="請輸入生日">
+                            <input type="text" id="member-gender" placeholder="請輸入性別">
+                        </div>
+                        <div class="input">
+                            <input type="text" id="member-phone" placeholder="請輸入手機號碼">
+                        </div>
+                        <div class="input">
+                            <input type="text" id="member-address" placeholder="請輸入常用地址">
+                        </div>
+                    </div>
+                    <div class="save-button">
+                        <button>儲存</button>
+                    </div>
+                </div>
+            </div>
+            <div class="member-feature">
+                <div class="feature">
+                    <a class="order-feature" href="">
+                        <img src="img/transport.svg" alt="order-process">
+                        <div>&emsp;訂單查詢</div>
+                    </a>
+                </div>
+                <div class="feature">
+                    <a class="favorite-feature" href="">
+                        <img src="img/black_heart.svg" alt="favorite-feature">
+                        <div>&emsp;收藏清單</div>
+                    </a>
+                </div>
+                <div class="feature">
+                    <a class="money-feature" href="">
+                        <img src="img/money.svg" alt="money">
+                        <div>我的購物金</div>
+                    </a>
+                </div>
+                <div class="feature">
+                    <a class="coupon-feature" href="">
+                        <img src="img/coupon_2.svg" alt="coupon">
+                        <div>我的折價券</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footerContent">
+            <div class="footer_left">
+                <ul>
+                    <li><a href="#">關於Stylish</a></li>
+                    <li><a href="#">服務條款</a></li>
+                    <li><a href="#">隱私政策</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer_center">
+                <ul>
+                    <li><a href="#"><img src="img/line.png" alt="line_contact"></a></li>
+                    <li><a href="#"><img src="img/twitter.png" alt="twitter_contact"></a></li>
+                    <li><a href="#"><img src="img/facebook.png" alt="facebook_contact"></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>ⓒ 2018. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/common.js"></script>
+    <script src="js/profile.js"></script>
+    <!-- <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script> -->
+</body>
+
+</html>

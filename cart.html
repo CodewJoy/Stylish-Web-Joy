@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155010208-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-155010208-1');
+    //     ga('set', 'userId', 'USER_ID'); // 使用已登入的 user_id 設定 User ID。
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stylish_cart</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="https://js.tappaysdk.com/tpdirect/v4"></script>
+    <script>
+        TPDirect.setupSDK(12348, "app_pa1pQcKoY22IlnSXq5m5WP5jFKzoRG58VEXpT7wU62ud7mMbDOGzCYIlzzLF", "sandbox")
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a class="headerLogo" href="./"><img class="btnLogo" src="img/logo.png"></a>
+            <form class="mobile-search-shown">
+                <input type="text" class="searchDescription-mobile" size="50">
+                <img class="btnSearch-mobile-shown" src="img/search.png">
+            </form>
+            <img class="btnSearch_mobile" src="img/search.png">
+            <div class="nav_web">
+                <div class="nav_center">
+                    <ul>
+                        <li><a href="./?category=women" class="womenButton">女裝</a></li>
+                        <li>|</li>
+                        <li><a href="./?category=men" class="menButton">男裝</a></li>
+                        <li>|</li>
+                        <li><a href="./?category=accessories" class="accessoriesButton">配件</a></li>
+                    </ul>
+                </div>
+                <div class="nav_right">
+                    <!-- <form action="/action_page.php"> -->
+                    <form>
+                        <input type="text" class="searchDescription" size="50">
+                        <img class="btnSearch_web" src="img/search.png">
+                    </form>
+                    <a href="cart.html">
+                        <div class="cart_web" style="background-image: url(./img/cart.png)">
+                            <div class="qty"></div>
+                        </div>
+                    </a>
+                    <a href="#" scope="public_profile,email">
+                        <img class="member_web" src="img/member.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="subNav">
+            <ul class="menu">
+                <li><a href="./?category=women" class="womenButton">女裝</a></li>
+                <li>|</li>
+                <li><a href="./?category=men" class="menButton">男裝</a></li>
+                <li>|</li>
+                <li><a href="./?category=accessories" class="accessoriesButton">配件</a></li>
+            </ul>
+            <ul class="menu_bottom">
+                <li>
+                    <a class="cart_mobile" href="cart.html">
+                        <div class="cart_mobile_logo" style="background-image: url(./img/cart-mobile.png)">
+                            <div class="qty"></div>
+                        </div>
+                        <span>購物車</span>
+                    </a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a class="member_mobile" href="#">
+                        <img src="img/member-mobile.png">
+                        <span>會員</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="view">
+            <div class="cart">
+                <!-- <div class="order-zero"">購物車空空的耶</div> -->
+            </div>
+            <div class="target">
+                <div class="country">
+                    配送國家 &emsp;
+                    <br>
+                    <select>
+                        <option value="台灣或離島">台灣或離島</option>
+                    </select>
+                </div>
+                <div class="country">
+                    付款方式 &emsp;
+                    <br>
+                    <select>
+                        <option value="信用卡付款">信用卡付款</option>
+                    </select>
+                </div>
+            </div>
+            <div class="reminder">
+                ※ 提醒您：
+                <br>
+                ● 請填寫正確收件人資訊，避免包裹配送不達
+                <br>
+                ● 請填寫正確收件人姓名 ( 與證件相符 )，避免無法領取
+            </div>
+            <div class="recipient">
+                <div class="recipient-title">收件資料</div>
+                <hr>
+                <div class="line">
+                    <div class="input-text">收件人姓名</div>
+                    <div class="input">
+                        <input type="text" id="recipient-name">
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="input-text">Email</div>
+                    <div class="input">
+                        <input type="text" id="recipient-email">
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="input-text">手機號碼</div>
+                    <div class="input">
+                        <input type="text" id="recipient-phone">
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="input-text">收件地址</div>
+                    <div class="input">
+                        <input type="text" id="recipient-address">
+                    </div>
+                </div>
+                <div class="delivery-time">
+                    <div class="input-text">配送時間</div>
+                    <form action="/action_page.php">
+                        <input type="radio" name="recipient-time" value="morning" checked>
+                        <span>08:00 - 12:00</span>
+                        <br>
+                        <input type="radio" name="recipient-time" value="afternoon">
+                        <span>14:00 - 18:00</span>
+                        <br>
+                        <input type="radio" name="recipient-time" value="anytime">
+                        <span>不指定</span>
+                        <br>
+                    </form>
+                </div>
+            </div>
+            <div class="payment">
+                <div class="recipient-title">付款資料</div>
+                <hr>
+                <div class="line">
+                    <div class="input-text">信用卡號碼</div>
+                    <div class="input">
+                        <div class="tpfield" id="card-number"></div>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="input-text">有效期限</div>
+                    <div class="input">
+                        <div class="tpfield" id="card-expiration-date"></div>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="input-text">安全碼</div>
+                    <div class="input">
+                        <div class="tpfield" id="card-ccv"></div>
+                    </div>
+                </div>
+                <!-- <div class="recipient-title">付款資料</div>
+                <hr>
+                <div class="line">
+                    <div class="input-text">信用卡號碼</div>
+                    <div class="input">
+                        <input type="text" class="tpfield" id="card-number">
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="input-text">有效期限</div>
+                    <div class="input">
+                        <input type="text" class="tpfield" id="validity-period">
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="input-text">安全碼</div>
+                    <div class="input">
+                        <input type="text" class="tpfield" id="security-code">
+                    </div>
+                </div> -->
+            </div>
+            <hr>
+            <div class="confirm">
+                <div class="amount">
+                    <div class="total-amount">
+                        <div>總金額</div>
+                        <div class="total-amount-number">NT. <span>0</span></div>
+                    </div>
+                    <div class="fare">
+                        <div>運費</div>
+                        <div class="fare-number">NT. <span>60</span>
+                        </div>
+                    </div>
+                    <div class="payable-amount">
+                        <div>應付金額</div>
+                        <div class="payable-amount-number">NT. <span>0</span></div>
+                    </div>
+                </div>
+                <button class="check-to-pay" onclick="onSubmit(event)">確認付款</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerContent">
+            <div class="footer_left">
+                <ul>
+                    <li><a href="#">關於Stylish</a></li>
+                    <li><a href="#">服務條款</a></li>
+                    <li><a href="#">隱私政策</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer_center">
+                <ul>
+                    <li><a href="#"><img src="img/line.png" alt="line_contact"></a></li>
+                    <li><a href="#"><img src="img/twitter.png" alt="twitter_contact"></a></li>
+                    <li><a href="#"><img src="img/facebook.png" alt="facebook_contact"></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>ⓒ 2018. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/common.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>

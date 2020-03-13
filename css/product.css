@@ -1,0 +1,152 @@
+/* mobile max_width 500px */
+
+/* for product page  */
+/* main */
+
+/* main-section */
+.main-section {
+  width: 100%;
+}
+.main-image {
+  width: 100%;
+}
+.main-image img {
+  width: 100%;
+}
+.product-detail {
+  margin: 3%;
+  width: 94%;
+}
+.product-name {
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+.product-id {
+  font-size: 16px;
+  letter-spacing: 3.2px;
+  color: #bababa;
+}
+
+/* product-summary */
+.product-summary {
+  margin: 3%;
+  width: 94%;
+}
+.more-description {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.more-description p {
+  width: 120px;
+  flex: none;
+  color: #8b572a;
+}
+.more-description hr {
+  flex: auto;
+}
+.product-description p {
+  line-height: 1.71;
+  color: #3f3a3a;
+}
+.product-image img{
+  width: 100%;
+}
+.color-row, .size-row, .quantity-row {
+  display: flex;
+  align-items: center;
+  margin: 2%;
+}
+.clothColor {
+  width: 24px;
+  height: 24px;
+  background-color:lightsteelblue;
+  /* box-shadow: 1px 1px 1px 1px dimgray; */
+  padding: 2px;
+  border: 4px solid white;
+  margin: 2%;
+  outline: 1px solid lightgray;
+}
+.color-pick {
+  outline: 1px solid black;
+}
+
+.size {
+  width: 34px;
+  height: 34px;
+  margin: 2%;
+  background-color: lightgrey;
+  border-radius: 99em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.size-pick {
+  color: white;
+  background-color: black;
+}
+
+.quantity {
+  outline: 1px solid lightgray;
+  display: flex;
+}
+.input-number {
+  padding: 8px 0px 8px 0px;
+  text-align: center;
+  color: #8b572a;
+}
+.number-decrement, .number-increment {
+  cursor: pointer;
+  padding: 8px;
+  text-align: center;
+}
+
+.add-to-cart {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  letter-spacing: 3.2px;
+}
+
+
+@media (min-width: 800px) {
+  /* for product page  */
+  /* main */
+  main {
+    display: flex;
+    justify-content: center;  
+  }
+  .view {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .main-section {
+    margin: 3% 3% 0% 3%;
+    width: 94%;
+    display: flex;
+    justify-content: center;
+  }
+  .product-summary {
+    width: 100%;
+  } 
+  .main-image {
+    width: 50%;
+  }
+  .main-image img {
+    margin: 5% 0% 0% 0%;
+  }
+  .product-detail {
+    width: 40%; 
+  }
+}
+

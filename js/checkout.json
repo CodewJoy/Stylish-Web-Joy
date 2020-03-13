@@ -1,0 +1,41 @@
+{
+  "prime": [Prime Key from TapPay],
+  "order": {
+    "shipping": "delivery",
+    "payment": "credit_card",
+    "subtotal": [Price excluded Freight Fee],
+    "freight": [Freight Fee],
+    "total": [Final Price],
+    "recipient": {
+      "name": [Name],
+      "phone": [Phone],
+      "email": [Email],
+      "address": [Post Address],
+      "time": "morning"|"afternoon"|"anytime"
+    },
+    "list": [
+      {
+        "id": [Product ID],
+        "name": [Product Name],
+        "price": [Product Unit Price],
+        "color": {
+          "name": [Product Variant Color Name],
+          "code": [Product Variant Color HexCode]
+        },
+        "size": [Product Variant Size],
+        "qty": [Quantity]
+      },
+      {
+        "id": [Product ID],
+        "name": [Product Name],
+        "price": [Product Unit Price],
+        "color": {
+          "name": [Product Variant Color Name],
+          "code": [Product Variant Color HexCode]
+        },
+        "size": [Product Variant Size],
+        "qty": [Quantity]
+      }
+    ]
+  }
+}

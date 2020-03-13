@@ -1,0 +1,233 @@
+/* TapPay */
+.tpfield {
+    height: 40px;
+    width: 300px;
+    border: 1px solid gray;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+/* Bootstrap 的 focus style */
+.tappay-field-focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+main {
+    line-height: 25px;
+}
+.view {
+    width: 90%;
+    margin: 5%;
+}
+.cart {
+    border: solid 1px lightgray;
+}
+.cart hr {
+    width: 95%;
+}
+
+.order-zero {
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.row {
+    width: 90%;
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* variant */
+.variant {
+    width: 90%;
+    display: flex;
+}
+
+.remove-wrap {
+    width: 10%;    
+    
+}
+
+.remove{
+    width: 40px;
+    height: 40px;  
+}
+
+.picture-wrap {
+    width: 100px;
+}
+.picture{
+    width: 100%;
+}
+
+.detail {
+    margin: 5px 0 0 15px;
+    font-size: 0.9em;
+}
+
+/* calculate */
+.calculate, .calculate-web {
+    width: 95%;
+    margin: 2.5%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.calculate-web {
+    display: none;
+}
+
+select {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+}
+
+.select-qty select option{
+    font-size: 10px;
+}
+
+/* target */
+.target {
+    width: 100%;
+    display: flex;
+    background-color: gainsboro;
+    margin: 15px 15px 15px 0px;
+}
+
+.country {
+    flex: auto;
+    margin: 10px;
+    padding: 10px;
+}
+
+.target {
+    width: 100%;
+    display: flex;
+    background-color: gainsboro;
+    margin: 20px 0px 20px 0px;
+}
+
+/* recipient */
+.recipient, .reminder {
+    margin: 20px 0px 20px 0px;
+}
+
+.recipient-title {
+    font-weight: bold;
+}
+
+.input-text {
+    margin: 8px 0px;
+}
+
+.input input, .tpfield{
+    border: 1px solid #979797;
+    border-radius: 3px;
+    width: 95%;
+    height: 25px;
+}
+
+/* payment */
+.payment {
+    margin: 0 0 20px 0;
+}
+
+/* confirm */
+.confirm {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.amount {
+    width: 60%;
+    margin: 10px;
+}
+.total-amount, .fare, .payable-amount{
+    width: 95%;
+   display: flex;
+   justify-content: space-between;
+   margin: 10px;
+}
+
+.total-amount-number, .fare-number, .payable-amount-number {
+    font-size: 22px;
+}
+
+.check-to-pay {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 3.2px;
+    margin: 0 0 15px 0;
+}
+
+@media (min-width: 700px) {
+    .row {
+        display: flex;
+        align-items: center;
+        margin: 3%;
+    }
+
+    .detail {
+        font-size: 16px;
+    }
+
+    .variant {
+        width: 45%;
+    }
+
+    .calculate {
+        display: none;
+    }    
+
+    .calculate-web {
+        display: inline-flex;
+        width: 35%;
+    }
+
+    .country {
+        display: inline-flex;
+    }
+
+    .line, .delivery-time {
+        width: 80%;
+        display: inline-flex;
+        align-items: center;
+    }
+    .input {
+        width: 80%;      
+    }
+    .input-text {
+        flex: none;
+        width: 150px;
+    }
+
+    form {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    form span {
+        margin: 0 20px 0 5px;
+    }
+
+    .amount {
+        width: 50%;
+    }
+
+    .check-to-pay {
+        width: 50%;
+    }
+}
